@@ -1,0 +1,45 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note right of browser: The browser request the page
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    activate server
+
+    Note left of server: The server answers with the html page 
+
+    server-->>browser: HTML document
+    deactivate server
+
+    Note right of browser: The browser requests the css file
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    
+    Note left of server: The server sends the css
+    
+    server-->>browser: CSS file
+    deactivate server
+
+    Note right of browser: The browser requests the js file
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    activate server
+    
+    Note left of server: The server sends the js
+
+    server-->>browser: JScript file
+    deactivate server
+
+    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+    
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: [{ "content": "cxz", "date": "2024-05-28T11:55:52.591Z" }, ... ]
+    deactivate server
+
+
+    Note right of browser: The browser executes the callback function that renders the notes
+
+
