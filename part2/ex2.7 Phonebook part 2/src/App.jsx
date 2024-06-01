@@ -11,7 +11,7 @@ const App = () => {
           name: newPerson
         }
         if (persons.some(personInPersons => personInPersons.name === person.name)){
-          alert("Ese nombre ya está agendado")
+          alert(`${person.name} ya está agendado`)
         }
         else {
           setPersons(persons.concat(person))
