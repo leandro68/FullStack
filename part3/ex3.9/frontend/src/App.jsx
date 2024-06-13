@@ -112,8 +112,10 @@ const App = () => {
     personService
       .delPerson(id)
       .then(personDeleted => {
-        //console.log('person deleted',personDeleted)
-        const newPersons = persons.filter(obj => obj.id !== personDeleted.id)
+        
+        const newPersons = persons.filter(obj => obj.id !== id)
+        console.log('person deleted',id)
+        console.log(newPersons)
         setPersons(newPersons)
         setPersonToShow(newPersons)
       })
