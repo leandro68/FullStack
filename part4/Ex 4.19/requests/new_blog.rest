@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuYSIsImlkIjoiNjY4MmVhNjQ0N2QyMTdhMWZhZjJhMmNlIiwiaWF0IjoxNzE5ODU1NzQ3LCJleHAiOjE3MTk4NTkzNDd9.YTHzqkQR0mNDPsNRZu6azkLML4qg3OBmIWe52wlAsao
+
+{
+  "title": "titulo4",
+  "author": "autor4 del blog",
+  "url": "url4.com.ar",
+  "likes": 24
+}
