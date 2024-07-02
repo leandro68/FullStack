@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuYSIsImlkIjoiNjY4MmVhNjQ0N2QyMTdhMWZhZjJhMmNlIiwiaWF0IjoxNzE5ODYxMzM4LCJleHAiOjE3MTk4NjQ5Mzh9.W8OlV9OYfmSWqenrpSdzzTwxvDH8QVxTZdMX4bGdfT4
+
+{
+  "title": "titulo5",
+  "author": "autor5 del blog",
+  "url": "url5.com.ar",
+  "likes": 5
+}
