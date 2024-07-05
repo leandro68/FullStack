@@ -8,7 +8,10 @@ const Blog = ({ blog }) => {
       <div className="blog">
           <p>{blog.title} </p>
           <p>{blog.url} </p>
-          <p>Likes: {blog.likes} </p>
+          <div class="likes-container">
+            <p>Likes: {blog.likes} </p>
+            <button className="viewButton">Like</button>
+          </div>
           <p>{blog.author} </p>
         <button className="viewButton" onClick={() => setViewData(false)}>hide</button>
       </div> 
