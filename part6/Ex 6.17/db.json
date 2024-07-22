@@ -49,6 +49,11 @@
       "id": "9b24",
       "content": "new anecdote 01",
       "votes": 0
+    },
+    {
+      "id": "f211",
+      "content": "new anecdote 02",
+      "votes": 0
     }
   ]
 }
