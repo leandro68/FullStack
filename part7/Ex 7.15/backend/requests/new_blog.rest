@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuYSIsImlkIjoiNjY4MmVhNjQ0N2QyMTdhMWZhZjJhMmNlIiwiaWF0IjoxNzE5OTIwMTc5LCJleHAiOjE3MTk5MjM3Nzl9.KwFxVNRFgxbK_ngjZZ8HZY7cXVRyRoDThw8kmkyrOfg
+
+{
+  "title": "titulo11",
+  "author": "autor11 del blog",
+  "url": "url11.com.ar",
+  "likes": 11
+}
