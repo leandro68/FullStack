@@ -1,15 +1,20 @@
 import { useState } from 'react'
 import blogService from '../services/blogs'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { appendBlog } from '../reducers/blogReducer'
 import { setNotification } from '../reducers/notificationReducer'
+import { setBlogs } from '../reducers/blogReducer'
+import { setUser } from '../reducers/userReducer'
+import Logout from './Logout'
 
-const BlogForm = ({ handleAddBlog, blogFormVisible, setBlogFormVisible }) => {
+const BlogForm = () => {
   const [newTitle, setNewTitle] = useState('')
   const [newAuthor, setNewAuthor] = useState('')
   const [newUrl, setNewUrl] = useState('')
+  const [blogFormVisible, setBlogFormVisible] = useState(false)
 
   const dispatch = useDispatch()
+  const user = useSelector((state) => state.user)
 
   const addBlog = (eventt) => {
     event.preventDefault()
@@ -44,8 +49,13 @@ const BlogForm = ({ handleAddBlog, blogFormVisible, setBlogFormVisible }) => {
     setNewUrl('')
   }
 
+  const handleAddBlog = (event) => {
+    blogFormVisible ? setBlogFormVisible(false) : setBlogFormVisible(true)
+  }
+
   return (
     <div>
+      <Logout />
       {blogFormVisible ? (
         <div>
           <form onSubmit={addBlog}>

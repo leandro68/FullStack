@@ -69,3 +69,7 @@ h1 {
 .user-item p {
   margin: 0;
 }
+
+.link-menu {
+  padding: 5px;
+}
