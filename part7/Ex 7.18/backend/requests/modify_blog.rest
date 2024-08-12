@@ -1,0 +1,11 @@
+PUT http://localhost:3003/api/blogs/66880886d5d1e91127329fda
+Content-Type: application/json
+Authorization: Bearer 
+
+{
+  "title": "titulo11",
+  "author": "autor11 del blog",
+  "url": "url11.com.ar",
+  "likes": 18,
+  "user": "6682ea6447d217a1faf2a2ce"
+}
