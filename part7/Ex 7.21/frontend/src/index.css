@@ -1,0 +1,91 @@
+h1 {
+  color: green;
+  font-style: italic;
+}
+
+.note {
+  color: grey;
+  padding-top: 3px;
+  font-size: 15px;
+}
+
+.message {
+  background: lightgrey;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.blog {
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px;
+  margin-bottom: 3px;
+}
+
+.viewButton {
+  margin-left: 5px;
+}
+
+.likes-container {
+  display: flex;
+  align-items: center;
+}
+
+.blog p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.blogTitle-container {
+  display: flex;
+  align-items: center;
+}
+
+.removeButton {
+  background-color: aqua;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-item div {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.user-item div:last-child {
+  flex: 0 0 auto;
+  margin-right: 0;
+}
+
+.user-item p {
+  margin: 0;
+}
+
+.logout-section {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.logout-section span {
+  margin-right: 10px;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+}
+
+/*
+.link-menu {
+  padding: 5px;
+  margin-right: 10px;
+}
+*/
